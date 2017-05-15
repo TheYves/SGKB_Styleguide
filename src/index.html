@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SGKB Styleguide</title>
+
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+	<div class="page-header">
+		<h1>Bootstrap grid examples</h1>
+		<p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+	</div>
+
+	<div class="row">
+		<!--Nav Bar -->
+		<nav class="col-xs-3 bs-docs-sidebar">
+			<ul id="sidebar" class="nav nav-stacked fixed">
+				<li>
+					<a href="#Buttons">Buttons</a>
+					<ul class="nav nav-stacked">
+						<li><a href="#GroupASub1">Sub-Group 1</a></li>
+						<li><a href="#GroupASub2">Sub-Group 2</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#GroupB">Group B</a>
+					<ul class="nav nav-stacked">
+						<li><a href="#GroupBSub1">Sub-Group 1</a></li>
+						<li><a href="#GroupBSub2">Sub-Group 2</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#GroupC">Group C</a>
+					<ul class="nav nav-stacked">
+						<li><a href="#GroupCSub1">Sub-Group 1</a></li>
+						<li><a href="#GroupCSub2">Sub-Group 2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+		<!--Main Content -->
+		<div class="col-xs-9">
+
+			<section id="Buttons" class="group">
+				<h2>Buttons</h2>
+				<div id="ButtonsTags" class="subgroup">
+					<h3>Button tags</h3>
+
+					<form class="bs-example" data-example-id="btn-tags">
+						<a href="#" class="btn btn-primary" role="button">Link</a>
+						<button class="btn btn-primary" type="submit">Button</button>
+						<input class="btn btn-primary" type="button" value="Input"> <input class="btn btn-primary"
+																						   type="submit" value="Submit">
+					</form>
+					<figure class="highlight">
+<pre><code class="html"><!--
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+--></code></pre>
+					</figure>
+
+				</div>
+
+				<div id="ButtonsOptions" class="subgroup">
+					<h3>Options</h3>
+					<p>
+						Use any of the available button classes to quickly create a styled button.
+					</p>
+					<div class="bs-example" data-example-id="btn-variants">
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+					<figure class="highlight">
+<pre><code class="html"><!--
+<!- Standard button ->
+<button type="button" class="btn btn-primary">Primary</button>
+	
+<!- Provides extra visual weight and identifies the primary action in a set of buttons ->
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<!- Deemphasize a button by making it look like a link while maintaining button behavior ->
+<button type="button" class="btn btn-link">Link</button>
+--></code></pre>
+					</figure>
+				</div>
+			</section>
+
+			<section id="GroupB" class="group">
+				<h3>Group B</h3>
+				<div id="GroupBSub1" class="subgroup">
+					<h4>Group B Sub 1</h4>
+				</div>
+				<div id="GroupBSub2" class="subgroup">
+					<h4>Group B Sub 2</h4>
+				</div>
+			</section>
+
+			<section id="GroupC" class="group">
+				<h3>Group C</h3>
+				<div id="GroupCSub1" class="subgroup">
+					<h4>Group C Sub 1</h4>
+				</div>
+				<div id="GroupCSub2" class="subgroup">
+					<h4>Group C Sub 2</h4>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/scrollspy.js"></script>
+<script src="js/docs.js"></script>
+</body>
+</html>
