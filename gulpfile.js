@@ -37,7 +37,11 @@ gulp.task('copy', function () {
 });
 
 gulp.task('uglify', function () {
-	gulp.src(['./src/js/main.js', './node_modules/bootstrap/js/*.js'])
+	gulp.src(['./node_modules/bootstrap/js/*.js'])
+		.pipe(uglify())
+		.pipe(gulp.dest('./dist/js/bootstrap'));
+
+	gulp.src(['./src/js/main.js'])
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js'));
 
