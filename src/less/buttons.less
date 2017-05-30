@@ -1,0 +1,31 @@
+.btn {
+  min-width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px;
+  padding: 0 10px 0 10px;
+}
+
+.btn-primary {
+  &:hover {
+	background: #fff;
+	color: @brand-primary;
+	border-color: @brand-primary;
+  }
+}
+
+.btn-secondary {
+  .btn-default;
+  &:hover {
+	background: #fff;
+	color: @gray-dark;
+	border-color: @gray-dark;
+  }
+}
+
+.btn-link {
+  min-width: 0;
+  &:hover {
+	color: @brand-primary;
+  }
+}

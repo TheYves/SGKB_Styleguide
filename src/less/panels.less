@@ -1,0 +1,64 @@
+.panel-heading {
+
+}
+
+.panel-title {
+  font-size: @font-size-h2;
+
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
+    display: block;
+    padding: 9px 15px;
+    color: white;
+    background: @brand-primary;
+
+    &.collapsed {
+      color: @gray-dark;
+      background: @gray-light;
+      border: @gray;
+    }
+  }
+
+  > a,
+  > small > a,
+  > .small > a {
+    &:before {
+      content: 'j';
+      float: right;
+      font-family: @icon-font-name;
+      font-size: 20px;
+    }
+
+    &.collapsed {
+      &:before {
+        content: 'A';
+      }
+
+      &:hover {
+        color: @brand-primary;
+
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.panel-group .panel + .panel {
+  margin-top: 10px;
+}
+
+.panel {
+  box-shadow: none;
+}
