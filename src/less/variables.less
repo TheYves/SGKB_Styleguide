@@ -4,6 +4,23 @@
 
 // SGKB stuff goes here
 
+@gray-border: #AAA;
+@gray-placeholder: #a9a9a9;
+
+@brand-danger-bg: #ffe0e0;
+
+@font-size-button: 16px;
+
+@margin-tiny:    5px;
+@margin-xsmall:  10px;
+@margin-small:   15px;
+
+@margin-default: 20px;
+
+@margin-medium:  30px;
+@margin-large:   40px;
+@margin-xlarge:  50px;
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // BOOTSTRAP STUFF
@@ -29,7 +46,7 @@
 @brand-success: #5cb85c; // tbd by sgkb
 @brand-info: #5bc0de; // tbd by sgkb
 @brand-warning: #f0ad4e; // tbd by sgkb
-@brand-danger: #d9534f; // tbd by sgkb
+@brand-danger: #E52429;
 
 
 
@@ -198,24 +215,24 @@
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+@input-color:                    @text-color;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   @gray-border;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            0;
 //** Large `.form-control` border radius
-@input-border-radius-large:      @border-radius-large;
+@input-border-radius-large:      0;
 //** Small `.form-control` border radius
-@input-border-radius-small:      @border-radius-small;
+@input-border-radius-small:      0;
 
 //** Border color for inputs on focus
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-@input-color-placeholder:        #999;
+@input-color-placeholder:        @gray-placeholder;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
