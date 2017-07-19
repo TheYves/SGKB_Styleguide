@@ -17,7 +17,7 @@
 
   <div class="page-header">
     <h1>SGKB Styleguide</h1>
-    <p class="lead">Letztes Update: 12.07.2017
+    <p class="lead">Letztes Update: 19.07.2017
     </p>
   </div>
 
@@ -32,7 +32,7 @@
 
       <!-- ////////////////////////////// GRID SYSTEM ////////////////////////////// -->
       <section id="Grid" class="group">
-        <h2>Grid</h2>
+        <h2 class="border">Grid</h2>
           <div class="box">
             <p>
               Das Grid System basiert auf Bootstrap und enthält 12 Spalten. Man verwendet sie um Inhalte zu strukturieren. Siehe <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a> für weitere Infos:
@@ -110,17 +110,72 @@
 
 
 
+      <!-- ////////////////////////////// FARBEN ////////////////////////////// -->
+      <section id="Farben" class="group">
+        <h2 class="border">Farben</h2>
+        <p>Wir verwenden sechs Grundfarben für digitale Anwendungen.</p>
+        <div id="FarbenTags" class="subgroup">
+          <div class="bs-example">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="circle brand-gruen"></div>
+                <p>SGKB Grün</p>
+              </div>
+              <div class="col-md-2">
+                <div class="circle brand-schwarz"></div>
+                <p>Schwarz</p>
+              </div>
+              <div class="col-md-2">
+                <div class="circle brand-dunkelgrau"></div>
+                <p>Dunkelgrau</p>
+              </div>
+              <div class="col-md-2">
+                <div class="circle brand-mittelgrau"></div>
+                <p>Mittelgrau</p>
+              </div>
+              <div class="col-md-2">
+                <div class="circle brand-hellgrau"></div>
+                <p>Hellgrau</p>
+              </div>
+              <div class="col-md-2">
+                <div class="circle brand-weiss" style="border: 1px solid #e3e3e3;"></div>
+                <p>Weiss</p>
+              </div>
+            </div>
+          </div>
+          <figure class="highlight">
+<pre><code class="html"><!--
+SGKB Grün: @brand-gruen / #008751;
+Schwarz: @brand-schwarz / #000000;
+Dunkelgrau: @brand-dunkelgrau / #5F5F5F;
+Mittelgrau: @brand-mittelgrau / #E3E3E3;
+Hellgrau: @brand-hellgrau / #F6F6F6;
+Weiss: @brand-weiss / #FFFFFF;
+--></code></pre>
+          </figure>
+
+        </div>
+      </section>
+      <!-- ////////////////////////////// END: FARBEN ////////////////////////////// -->
+
+
+
+
+
+
+
       <!-- ////////////////////////////// BUTTONS ////////////////////////////// -->
       <section id="Buttons" class="group">
-        <h2>Buttons</h2>
+        <h2 class="border">Buttons</h2>
+        <p>Wir kennen drei Arten von Buttons. Primary, Secondary und Link. Die Button-Breite kann variieren. Für Mobile Lösungen ist eine Breite von 100% beispielsweise durchaus denkbar.</p>
         <div id="ButtonsTags" class="subgroup">
           <h3>Button tags</h3>
 
           <form class="bs-example" data-example-id="btn-tags">
             <a href="#" class="btn btn-primary" role="button">Link</a>
             <button class="btn btn-primary" type="submit">Button</button>
-            <input class="btn btn-primary" type="button" value="Input"> <input class="btn btn-primary"
-                                                                               type="submit" value="Submit">
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
           </form>
           <figure class="highlight">
 <pre><code class="html"><!--
@@ -165,7 +220,8 @@
 
       <!-- ////////////////////////////// TYPOGRAPHY ////////////////////////////// -->
       <section id="Typography" class="group">
-        <h2>Typography</h2>
+        <h2 class="border">Typography</h2>
+        <p>Die SGKB verwendet für die Typografie vier Varianten von Titel (h1 bis h4), einen Lead- und einen Paragraph-Stil.</p>
         <div id="TypographyHeadings" class="subgroup">
           <h3>Headings</h3>
           <p>
@@ -204,7 +260,22 @@
 --></code></pre>
           </figure>
         </div>
-      </section>
+
+
+      <div id="TypographyParagraph" class="subgroup">
+        <h3>Paragraph</h3>
+        <div class="bs-example">
+          <p>
+            Das ist ein normaler Paragraph. Dieser Stil wird für Fliesstext verwendet.
+          </p>
+        </div>
+        <figure class="highlight">
+<pre><code class="html"><!--
+<p>Leadtexte werden vor allem auf Inhaltsseiten verwendet.</p>
+--></code></pre>
+        </figure>
+      </div>
+    </section>
       <!-- ////////////////////////////// END: TYPOGRAPHY ////////////////////////////// -->
 
 
@@ -213,7 +284,7 @@
 
       <!-- ////////////////////////////// ACCORDION ////////////////////////////// -->
       <section id="Accordion" class="group">
-        <h2>Akkordeon</h2>
+        <h2 class="border">Akkordeon</h2>
 
         <div class="bs-example">
 
@@ -348,7 +419,7 @@
 
       <!-- ////////////////////////////// FORMS ////////////////////////////// -->
       <section id="Forms" class="group">
-        <h2>Forms</h2>
+        <h2 class="border">Forms</h2>
         <form method="post" class="form-wrapper">
 
           <div class="box">
@@ -397,7 +468,7 @@
 
       <!-- ////////////////////////////// ICONS ////////////////////////////// -->
       <section id="Icons" class="group">
-        <h2>Icons</h2>
+        <h2 class="border">Icons</h2>
 
         <div id="IconCssClasses" class="subgroup">
           <h3>CSS Classes</h3>
