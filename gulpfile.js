@@ -31,9 +31,11 @@ gulp.task('copy', function () {
 	gulp.src(['./src/index.html'])
 		.pipe(gulp.dest('./dist', {overwrite: true}));
 
-
 	gulp.src(['./src/fonts/**/*'])
 		.pipe(gulp.dest('./dist/fonts', {overwrite: true}));
+
+	gulp.src(['./src/img/**/*'])
+		.pipe(gulp.dest('./dist/img', {overwrite: true}));
 });
 
 gulp.task('uglify', function () {
@@ -52,4 +54,3 @@ gulp.task('uglify', function () {
 		.pipe(concat('docs.js'))
 		.pipe(gulp.dest('./dist/js'));
 });
-
